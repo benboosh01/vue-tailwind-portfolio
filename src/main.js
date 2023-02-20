@@ -12,11 +12,30 @@ import {
   faGithubSquare,
   faLinkedin,
   faTwitterSquare,
+  faJsSquare,
+  faPython,
+  faNodeJs,
+  faReact,
+  faVuejs,
+  faHtml5,
+  faCss3Alt,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 /* add icons to the library */
-library.add(faGithubSquare, faLinkedin, faTwitterSquare, faEnvelope);
+library.add(
+  faGithubSquare,
+  faLinkedin,
+  faTwitterSquare,
+  faEnvelope,
+  faJsSquare,
+  faPython,
+  faNodeJs,
+  faReact,
+  faVuejs,
+  faHtml5,
+  faCss3Alt
+);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
