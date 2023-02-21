@@ -1,14 +1,16 @@
 <template>
-  <main class="grid h-screen place-items-center">
-    <FrontEnd />
+  <Nav />
+  <main class="grid justify-items-center">
+    <div
+      class="text-center shadow-2xl rounded border-solid p-20 mt-36 grid place-items-center w-[768px] h-[468px]"
+    >
+      <router-view></router-view>
+    </div>
   </main>
 </template>
 
 <script setup>
-import Home from "./page/Home.vue";
-import Skills from "./page/Skills.vue";
-import BackEnd from "./components/BackEnd.vue";
-import FrontEnd from "./components/FrontEnd.vue";
+import Nav from "./components/Nav.vue";
 </script>
 
 <style scoped></style>
