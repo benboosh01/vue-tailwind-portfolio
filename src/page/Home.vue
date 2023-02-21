@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center shadow-2xl rounded border-solid p-20">
+  <div>
     <h1 class="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
       Ben Bushell
     </h1>
