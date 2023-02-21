@@ -1,10 +1,9 @@
 <template>
-  <div class="text-center shadow-2xl rounded border-solid p-20">
-    <h1 class="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-      Front-End
-    </h1>
+  <div>
     <div>
-      <ul class="flex gap-10 justify-center mt-10 place-items-baseline">
+      <ul
+        class="flex gap-10 justify-center mt-10 place-items-baseline flex-wrap"
+      >
         <li>
           <font-awesome-icon icon="fa-brands fa-react" class="text-6xl" />
           <p>React</p>
