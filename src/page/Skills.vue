@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+    <h1 class="text-5xl font-bold tracking-tight sm:text-6xl">
       Technical Skills
     </h1>
     <div class="mt-10 flex gap-12 justify-center">

@@ -1,11 +1,7 @@
 <template>
   <div>
-    <h1 class="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-      Ben Bushell
-    </h1>
-    <h2
-      class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mt-3"
-    >
+    <h1 class="text-5xl font-bold tracking-tigh sm:text-6xl">Ben Bushell</h1>
+    <h2 class="text-2xl font-bold tracking-tight sm:text-3xl mt-3">
       Full-Stack Developer
     </h2>
     <div class="mt-10 flex items-center justify-center gap-x-6">
