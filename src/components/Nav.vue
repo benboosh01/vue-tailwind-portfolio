@@ -1,25 +1,12 @@
 <template>
-  <div class="mt-10 flex items-center justify-center gap-x-4">
-    <button
-      class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-32"
-    >
-      Tech
-    </button>
-    <button
-      class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-32"
-    >
-      Portfolio
-    </button>
-    <button
-      class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-32"
-    >
-      Experience
-    </button>
-    <button
-      class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-32"
-    >
-      Contact
-    </button>
+  <div class="flex justify-center mt-10">
+    <nav class="flex gap-10 underline">
+      <router-link to="/">Home</router-link>
+      <router-link to="/skills">Technical Skills</router-link>
+      <router-link to="/portfolio">Portfolio</router-link>
+      <router-link to="/experience">Experience</router-link>
+      <router-link to="/contact">Contact</router-link>
+    </nav>
   </div>
 </template>
 
