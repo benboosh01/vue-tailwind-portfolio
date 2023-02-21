@@ -5,7 +5,6 @@ import App from "./App.vue";
 import Home from "./page/Home.vue";
 import Skills from "./page/Skills.vue";
 import Portfolio from "./page/Portfolio.vue";
-import Experience from "./page/Experience.vue";
 import Contact from "./page/Contact.vue";
 
 /* import the fontawesome core */
@@ -55,7 +54,6 @@ const routes = [
   { path: "/", component: Home },
   { path: "/skills", component: Skills },
   { path: "/portfolio", component: Portfolio },
-  { path: "/experience", component: Experience },
   { path: "/contact", component: Contact },
 ];
 
