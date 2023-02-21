@@ -3,7 +3,7 @@
     <h1 class="text-5xl font-bold tracking-tight sm:text-6xl">
       Technical Skills
     </h1>
-    <div class="mt-10 flex gap-12 justify-center">
+    <div class="mt-10 flex gap-12 justify-center flex-wrap">
       <div class="flex flex-col gap-2">
         <font-awesome-icon icon="fa-solid fa-database" class="text-6xl" />
         <button

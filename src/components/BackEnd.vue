@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <ul class="flex gap-8 justify-center mt-10">
+      <ul class="flex gap-8 justify-center mt-10 flex-wrap">
         <li>
           <font-awesome-icon icon="fa-brands fa-python" class="text-6xl" />
           <p>Python</p>
