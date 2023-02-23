@@ -3,8 +3,10 @@
     <h1 class="text-5xl font-bold tracking-tight sm:text-6xl">
       Technical Skills
     </h1>
-    <div class="mt-10 flex gap-12 justify-center flex-wrap">
-      <div class="flex flex-col gap-2">
+    <div
+      class="mt-10 flex gap-12 justify-center flex-col sm:flex-row sm:gap-16"
+    >
+      <div class="flex flex-col gap-2 place-items-center sm:relative">
         <font-awesome-icon icon="fa-solid fa-database" class="text-6xl" />
         <button
           @click="handleSelection"
@@ -14,8 +16,9 @@
         >
           Database
         </button>
+        <Database v-if="selected === 'database'" class="sm:hidden" />
       </div>
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-2 place-items-center">
         <font-awesome-icon icon="fa-solid fa-server" class="text-6xl" />
         <button
           @click="handleSelection"
@@ -25,8 +28,9 @@
         >
           Back-End
         </button>
+        <BackEnd v-if="selected === 'backEnd'" class="sm:hidden" />
       </div>
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-2 place-items-center">
         <font-awesome-icon icon="fa-brands fa-chrome" class="text-6xl" />
         <button
           @click="handleSelection"
@@ -36,11 +40,12 @@
         >
           Front-End
         </button>
+        <FrontEnd v-if="selected === 'frontEnd'" class="sm:hidden" />
       </div>
     </div>
-    <Database v-if="selected === 'database'" />
-    <BackEnd v-if="selected === 'backEnd'" />
-    <FrontEnd v-if="selected === 'frontEnd'" />
+    <Database v-if="selected === 'database'" class="hidden md:block" />
+    <BackEnd v-if="selected === 'backEnd'" class="hidden md:block" />
+    <FrontEnd v-if="selected === 'frontEnd'" class="hidden md:block" />
   </div>
 </template>
 
