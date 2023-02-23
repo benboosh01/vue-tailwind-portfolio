@@ -30,7 +30,11 @@ import {
 
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
-import { faDatabase, faServer } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faDatabase,
+  faServer,
+} from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
 library.add(
@@ -47,7 +51,8 @@ library.add(
   faCss3Alt,
   faDatabase,
   faServer,
-  faChrome
+  faChrome,
+  faBars
 );
 
 const routes = [
