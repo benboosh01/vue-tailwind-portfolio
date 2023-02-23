@@ -1,9 +1,7 @@
 <template>
   <div>
-    <h1 class="text-5xl font-bold tracking-tigh sm:text-6xl">Ben Bushell</h1>
-    <h2 class="text-2xl font-bold tracking-tight sm:text-3xl mt-3">
-      Full-Stack Developer
-    </h2>
+    <h1 class="text-6xl font-bold tracking-tight">Ben Bushell</h1>
+    <h2 class="text-3xl font-bold tracking-tight mt-3">Full-Stack Developer</h2>
     <div class="mt-10 flex items-center justify-center gap-x-6">
       <a
         href="mailto:ben.bushell87@icloud.com"
@@ -17,19 +15,13 @@
         href="https://www.linkedin.com/in/ben-bushell-108901a2/"
         target="_blank"
       >
-        <font-awesome-icon
-          icon="fa-brands fa-linkedin"
-          class="text-4xl sm:text-5xl"
+        <font-awesome-icon icon="fa-brands fa-linkedin" class="text-5xl"
       /></a>
       <a href="https://github.com/benboosh01" target="_blank">
-        <font-awesome-icon
-          icon="fa-brands fa-square-github"
-          class="text-4xl sm:text-5xl"
+        <font-awesome-icon icon="fa-brands fa-square-github" class="text-5xl"
       /></a>
       <a href="https://twitter.com/ben_boosh01" target="_blank">
-        <font-awesome-icon
-          icon="fa-brands fa-square-twitter"
-          class="text-4xl sm:text-5xl"
+        <font-awesome-icon icon="fa-brands fa-square-twitter" class="text-5xl"
       /></a>
     </div>
   </div>
