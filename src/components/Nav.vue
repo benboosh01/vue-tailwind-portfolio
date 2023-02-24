@@ -2,7 +2,9 @@
   <nav
     class="z-10 flex justify-center py-8 absolute top-20 left-0 right-0 bottom-0 bg-slate-100"
   >
-    <div class="flex gap-8 flex-col text-3xl text-center w-11/12">
+    <div
+      class="flex gap-8 flex-col text-3xl text-center w-11/12 max-w-screen-lg"
+    >
       <router-link
         class="bg-slate-300 py-4 rounded text-4xl font-bold"
         to="/"

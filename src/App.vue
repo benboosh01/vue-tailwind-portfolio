@@ -1,11 +1,14 @@
 <template>
-  <button
-    to="/nav"
-    @click="toggleNav"
-    class="absolute top-5 right-12 text-4xl text-white"
-  >
-    <font-awesome-icon icon="fa-solid fa-bars" />
-  </button>
+  <div class="mx-auto max-w-screen-lg relative">
+    <button
+      to="/nav"
+      @click="toggleNav"
+      class="absolute top-5 right-12 text-4xl text-white"
+    >
+      <font-awesome-icon icon="fa-solid fa-bars" />
+    </button>
+  </div>
+
   <div class="h-20 bg-slate-600"></div>
 
   <Transition name="slide-fade-nav">
