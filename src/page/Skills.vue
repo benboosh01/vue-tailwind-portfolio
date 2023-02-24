@@ -12,11 +12,17 @@
           @click="handleSelection"
           id="database"
           class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
-          :style="[selected === 'database' ? { background: 'yellow' } : null]"
+          :style="[
+            selected === 'database'
+              ? { background: 'black', color: 'white' }
+              : null,
+          ]"
         >
           Database
         </button>
-        <Database v-if="selected === 'database'" class="sm:hidden" />
+        <Transition name="slide-fade">
+          <Database v-if="selected === 'database'" class="sm:hidden" />
+        </Transition>
       </div>
       <div class="flex flex-col gap-2 place-items-center">
         <font-awesome-icon icon="fa-solid fa-server" class="text-6xl" />
@@ -24,11 +30,17 @@
           @click="handleSelection"
           id="backEnd"
           class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-32"
-          :style="[selected === 'backEnd' ? { background: 'yellow' } : null]"
+          :style="[
+            selected === 'backEnd'
+              ? { background: 'black', color: 'white' }
+              : null,
+          ]"
         >
           Back-End
         </button>
-        <BackEnd v-if="selected === 'backEnd'" class="sm:hidden" />
+        <Transition name="slide-fade">
+          <BackEnd v-if="selected === 'backEnd'" class="sm:hidden" />
+        </Transition>
       </div>
       <div class="flex flex-col gap-2 place-items-center">
         <font-awesome-icon icon="fa-brands fa-chrome" class="text-6xl" />
@@ -36,16 +48,41 @@
           @click="handleSelection"
           id="frontEnd"
           class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-32"
-          :style="[selected === 'frontEnd' ? { background: 'yellow' } : null]"
+          :style="[
+            selected === 'frontEnd'
+              ? { background: 'black', color: 'white' }
+              : null,
+          ]"
         >
           Front-End
         </button>
-        <FrontEnd v-if="selected === 'frontEnd'" class="sm:hidden" />
+        <Transition name="slide-fade">
+          <FrontEnd v-if="selected === 'frontEnd'" class="sm:hidden" />
+        </Transition>
       </div>
     </div>
-    <Database v-if="selected === 'database'" class="hidden md:block" />
-    <BackEnd v-if="selected === 'backEnd'" class="hidden md:block" />
-    <FrontEnd v-if="selected === 'frontEnd'" class="hidden md:block" />
+    <div class="relative">
+      <Transition name="slide-fade">
+        <Database
+          v-show="selected === 'database'"
+          class="hidden md:block absolute top-0 w-full"
+        />
+      </Transition>
+
+      <Transition name="slide-fade">
+        <BackEnd
+          v-show="selected === 'backEnd'"
+          class="hidden md:block absolute top-0 w-full"
+        />
+      </Transition>
+
+      <Transition name="slide-fade">
+        <FrontEnd
+          v-show="selected === 'frontEnd'"
+          class="hidden md:block absolute top-0 w-full"
+        />
+      </Transition>
+    </div>
   </div>
 </template>
 

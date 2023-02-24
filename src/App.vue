@@ -7,7 +7,11 @@
     <font-awesome-icon icon="fa-solid fa-bars" />
   </button>
   <div class="h-20 bg-slate-600"></div>
-  <Nav v-if="showNav" @toggleNav="toggleNav" />
+
+  <Transition name="slide-fade-nav">
+    <Nav v-if="showNav" @toggleNav="toggleNav" />
+  </Transition>
+
   <main class="grid justify-items-center bg-slate-100 h-full">
     <div class="text-center p-20 mt-15 grid container">
       <router-view></router-view>
